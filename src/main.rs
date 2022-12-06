@@ -10,7 +10,7 @@ use backtest::{Backtest, RunMode};
 use brkga::{BRKGA, BrkgaConfig, FitnessExecutor};
 
 fn main() {
-    let csv_path = "scripts/data_collector/ETHUSDT-5m.csv";
+    let csv_path = "/home/aswin/Documents/trade-optimizer/BTCUSDT-1m.csv";
     
     let candles = match candlestick::load_candlesticks(csv_path) {
         Ok(candles) => candles,
